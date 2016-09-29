@@ -1,7 +1,10 @@
 class ArticlesController < ApplicationController
 
+	http_basic_authenticate_with name: "admin", password: "123123", only: :destroy
+	
 	def index 
 		@articles = Article.all
+		@markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
 	end 
 
 	def show 
@@ -44,6 +47,6 @@ class ArticlesController < ApplicationController
 
 	private 
 		def article_params
-			params.require(:article).permit(:title, :text)
+			params.require(:article).permit(:title, :text, :image)
 		end
 end

@@ -1,15 +1,17 @@
-<p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
- 
-<p>
-  <strong>Comment:</strong>
-  <%= comment.body %>
-</p>
-
-<p>
+<div class="comment mdl-color-text--grey-700">
+  <header class="comment__header">
+    <img src="/assets/user.png" class="comment__avatar">
+    <div class="comment__author">
+      <strong><%= comment.commenter %></strong>
+      <span>2 days ago</span>
+    </div>
+  </header>
+  <div class="comment__text">
+    <%= comment.body %>
+  </div>
+  <div>
   <%= link_to 'Destroy Comment', [comment.article, comment],
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
-</p>
+	</div>
+</div>

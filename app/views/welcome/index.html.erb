@@ -1,2 +1,18 @@
-<h1>Hello, Rails!</h1>
-<%= link_to 'My Blog', controller: 'articles' %>
+
+<% @articles.each do |article| %>
+
+<div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+        <img class="article-image" src="assets/<%= article.image %>" border="0" alt="">
+    </div>
+    <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text"><%= article.title %></h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+        <%= @markdown.render(article.text).html_safe %>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+        <%= link_to 'Read more', article_path(article), :class => 'mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent' %>
+    </div>
+</div>
+<% end %>

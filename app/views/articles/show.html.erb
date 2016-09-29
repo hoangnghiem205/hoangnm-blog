@@ -1,13 +1,25 @@
-<p>
-	<strong>Title: </strong>
-	<%= @article.title %>
-</p>
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text"><%= @article.title %></h2>
+                    </div>
+                    <div class="mdl-card__media">
+                        <img class="article-image" src="/assets/<%= @article.image %>" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <strong>Includes</strong>
+                        <span>Design, UX and Frontend Development</span>
+                    </div>
+                    <div class="mdl-grid portfolio-copy">
+                        <%= @article.text %>
+                    </div>
+                    <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
+                      <%= render 'comments/form' %>
 
-<p>
-	<strong>Text: </strong>
-	<%= @article.text %>
-</p>
+                    <%= render @article.comments %>
+                </div>
+          </div>
 
+<!-- 
 <h2>Comments</h2>
 <%= render @article.comments %>
 
@@ -15,4 +27,4 @@
 <%= render 'comments/form' %>
 
 <%= link_to 'Edit', edit_article_path(@article) %> | 
-<%= link_to 'Back', articles_path %>
+<%= link_to 'Back', articles_path %> -->

@@ -14,18 +14,22 @@
     </div>
   <% end %>
  
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
+  <div class="myform mdl-textfield mdl-js-textfield">
+    <%= f.label :title, :class => 'mdl-textfield__label' %><br>
+    <%= f.text_field :title, :class => 'mdl-textfield__input' %>
+  </div>
  
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
- 
-  <p>
-    <%= f.submit %>
-  </p>
+  <div class="myform mdl-textfield mdl-js-textarea">
+    <%= f.label :text, :class => 'mdl-textfield__label' %><br>
+    <%= f.text_area :text, :class => 'mdl-textfield__input' %>
+  </div>
+
+  <div class="myform mdl-textfield mdl-js-textfield">
+    <%= f.label :image, :class => 'mdl-textfield__label' %><br>
+    <%= f.text_field :image, :class => 'mdl-textfield__input' %>
+  </div>
+
+  <%= f.submit %>
+  
  
 <% end %>

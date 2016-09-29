@@ -1,13 +1,13 @@
 <%= form_for([@article, @article.comments.build]) do |f| %>
-  <p>
-    <%= f.label :commenter %><br>
-    <%= f.text_field :commenter %>
-  </p>
-  <p>
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <%= f.text_field :commenter, :class => 'mdl-textfield__input'%>
+    <%= f.label :commenter, :class => 'mdl-textfield__label' %>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <%= f.text_field :body, :class => 'mdl-textfield__input', :cols => 1 %>
+    <%= f.label :body, :class => 'mdl-textfield__label' %>
+  </div>
+  <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" onClick="alert(1)">
+    <i class="material-icons" role="presentation">check</i><span class="visuallyhidden">add comment</span>
+  </button>
 <% end %>

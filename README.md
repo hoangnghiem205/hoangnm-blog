@@ -23,6 +23,4 @@ URL: **https://hoangnm-blog.herokuapp.com/**
 - [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough 
-
-Here's a walkthrough of implemented user stories:
-![Video Walkthrough](http://i.imgur.com/qQZX8b5.gifv)
+[Gif](http://i.imgur.com/qQZX8b5.gifv)

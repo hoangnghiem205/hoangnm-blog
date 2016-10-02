@@ -10,7 +10,7 @@
                         <span>Design, UX and Frontend Development</span>
                     </div>
                     <div class="mdl-grid portfolio-copy">
-                        <%= @article.text %>
+                        <%= @markdown.render(@article.text).html_safe %>
                     </div>
                     <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
                       <%= render 'comments/form' %>

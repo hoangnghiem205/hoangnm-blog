@@ -9,6 +9,7 @@ class ArticlesController < ApplicationController
 
 	def show 
 		@article = Article.find(params[:id])
+		@markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
 	end
 
 	def new 

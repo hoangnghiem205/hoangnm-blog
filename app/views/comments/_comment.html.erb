@@ -1,6 +1,7 @@
 <div class="comment mdl-color-text--grey-700">
   <header class="comment__header">
-    <img src="/assets/user.png" class="comment__avatar">
+    <%= image_tag 'user.png', class: "article-image", border: 0, alt: "article image" %>
+
     <div class="comment__author">
       <strong><%= comment.commenter %></strong>
       <span>2 days ago</span>

@@ -1,24 +1,26 @@
-# README
+# Pre-work - *Hoangnm-Blog*
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Hoangnm-Blog** is a Ruby on Rails blog application.
 
-Things you may want to cover:
+Submitted by: **Nghiem Hoang**
 
-* Ruby version
+Time spent: **8** hours spent in total
 
-* System dependencies
+URL: **https://hoangnm-blog.herokuapp.com/**
 
-* Configuration
+## User Stories
 
-* Database creation
+* [x] User can create a new post, formatted using the Markdown language.
+* [x] User can edit an existing post.
+* [x] There is one post that introduces the App Creator with name, picture.
+* [x] User can delete stories, with an alert that asks the user to confirm.
+* [x] User see a search form on the Posts page.
+* [x] User can submit a search term to find all posts bywith titles containing the search term.
+* [x] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/. 
+* [ ] User can see how many views a post has. 
+* [ ] User can leave a comment on a post.
+* [ ] User can add "tags" to a post, and filter posts by tag. 
+- [ ] List anything else that you can get done to improve the app functionality!
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Video Walkthrough 
+[Gif](http://i.imgur.com/qQZX8b5.gifv)
